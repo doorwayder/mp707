@@ -1,0 +1,319 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)\r\n"
+    "LANGUAGE 25, 1\r\n"
+    "#pragma code_page(1251)\r\n"
+    "#include ""res\\MP707.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MP707.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About MP707"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "MP707 Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2011",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_MP707_DIALOG DIALOGEX 0, 0, 270, 204
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_APPWINDOW
+CAPTION "Remote Control --==DW==--"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,39,176,47,13
+    PUSHBUTTON      "Exit",IDCANCEL,94,176,47,13
+    EDITTEXT        IDC_EDIT1,19,23,224,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "On",IDC_BUTTON1,183,72,47,13,0,WS_EX_STATICEDGE
+    GROUPBOX        " Реле ",IDC_STATIC,175,46,69,63
+    PUSHBUTTON      "Off",IDC_BUTTON2,183,89,47,13,0,WS_EX_STATICEDGE
+    GROUPBOX        "Термостат",IDC_STATIC,19,46,140,121
+    PUSHBUTTON      "On",IDC_BUTTON3,43,105,32,13,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Off",IDC_BUTTON4,43,122,32,13,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "On",IDC_BUTTON5,102,106,32,13,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Off",IDC_BUTTON6,102,122,32,13,0,WS_EX_STATICEDGE
+    GROUPBOX        "Ch-2",IDC_STATIC,95,79,50,60
+    GROUPBOX        "Ch-1",IDC_STATIC,35,79,47,60
+    GROUPBOX        "Device Contol",IDC_STATIC,9,5,249,190
+    PUSHBUTTON      "Off",IDC_BUTTON7,36,147,112,13,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "On",IDC_BUTTON8,36,58,112,13,0,WS_EX_STATICEDGE
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,184,58,46,10
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,44,91,32,10
+    CONTROL         "",IDC_LIST4,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,102,92,32,10
+    EDITTEXT        IDC_EDIT2,177,124,40,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "->",IDOK2,222,124,24,13
+    LTEXT           "Температура",IDC_STATIC,177,113,52,8
+    LISTBOX         IDC_LIST1,177,144,68,29,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    PUSHBUTTON      "Clear",IDC_BUTTON9,177,177,68,12,0,WS_EX_STATICEDGE
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 228, 154
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Ini -> Setup"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Save",IDOK,158,16,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,158,33,50,14
+    CONTROL         "Подключать ICQ при запуске",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,20,113,9
+    GROUPBOX        "Настройки",IDC_STATIC,5,6,214,139
+    CONTROL         "Подключать Интернет при запуске",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,35,135,9
+    EDITTEXT        IDC_EDIT1,69,103,79,13,ES_AUTOHSCROLL
+    LTEXT           "Подключение",IDC_STATIC,16,105,52,10
+    CONTROL         "Запускать менеджер автоматически",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,50,135,9
+    EDITTEXT        IDC_EDIT3,69,123,79,13,ES_AUTOHSCROLL
+    LTEXT           "Менеджер",IDC_STATIC,16,125,52,10
+    DEFPUSHBUTTON   "Browse",IDBrowseB,157,122,50,14
+    COMBOBOX        IDC_COMBO1,69,83,79,68,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "COM - порт",IDC_STATIC,16,85,52,10
+    CONTROL         "Посылать сигнал модему AT+ZOPRT=5",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,65,144,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "MP707.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "MP707.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MP707_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 202
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "Device"
+    BEGIN
+        MENUITEM "Reconnect",                   ID_SETUP_TYPE1
+    END
+    POPUP "Internet"
+    BEGIN
+        MENUITEM "Connect",                     ID_INTERNET_CONNECT
+        MENUITEM "Disconnect",                  ID_INTERNET_DISCONNECT
+        MENUITEM "Run CManager",                ID_INTERNET_RUNCMANAGER
+    END
+    POPUP "ICQ"
+    BEGIN
+        MENUITEM "Connect",                     ID_ICQ_ON
+        MENUITEM "Disconnect",                  ID_ICQ_SETUP
+    END
+    POPUP "INI"
+    BEGIN
+        MENUITEM "SETUP",                       ID_INI_SETUP
+    END
+    MENUITEM "Exit",                        ID_EXIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG1 DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0x6f43, 0x316d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6f43, 0x326d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6f43, 0x336d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6f43, 0x346d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6f43, 0x356d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6f43, 0x366d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6f43, 0x376d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6f43, 0x386d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6f43, 0x396d, "\000" 
+    IDC_COMBO1, 0x403, 10, 0
+0x5c5c, 0x5c2e, 0x6f43, 0x316d, 0x0030, 
+    IDC_COMBO1, 0x403, 10, 0
+0x5c5c, 0x5c2e, 0x6f43, 0x316d, 0x0031, 
+    IDC_COMBO1, 0x403, 10, 0
+0x5c5c, 0x5c2e, 0x6f43, 0x316d, 0x0032, 
+    IDC_COMBO1, 0x403, 10, 0
+0x5c5c, 0x5c2e, 0x6f43, 0x316d, 0x0033, 
+    IDC_COMBO1, 0x403, 10, 0
+0x5c5c, 0x5c2e, 0x6f43, 0x316d, 0x0034, 
+    IDC_COMBO1, 0x403, 10, 0
+0x5c5c, 0x5c2e, 0x6f43, 0x316d, 0x0035, 
+    IDC_COMBO1, 0x403, 10, 0
+0x5c5c, 0x5c2e, 0x6f43, 0x316d, 0x0036, 
+    IDC_COMBO1, 0x403, 10, 0
+0x5c5c, 0x5c2e, 0x6f43, 0x316d, 0x0037, 
+    IDC_COMBO1, 0x403, 10, 0
+0x5c5c, 0x5c2e, 0x6f43, 0x316d, 0x0038, 
+    IDC_COMBO1, 0x403, 10, 0
+0x5c5c, 0x5c2e, 0x6f43, 0x316d, 0x0039, 
+    IDC_COMBO1, 0x403, 10, 0
+0x5c5c, 0x5c2e, 0x6f43, 0x326d, 0x0030, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About MP707..."
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE 25, 1
+#pragma code_page(1251)
+#include "res\MP707.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
